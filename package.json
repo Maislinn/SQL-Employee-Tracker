@@ -1,0 +1,17 @@
+{
+  "name": "object-oriented-programming-team-profile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test \" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Maislinn",
+  "license": "MIT",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.1.2"
+  }
+}
