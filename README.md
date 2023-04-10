@@ -3,29 +3,33 @@
 [![Contributors](https://img.shields.io/badge/Collaborator-MAISLINN-blue)](https://github.com/Maislinn)
 ![license](https://img.shields.io/badge/license-MIT-yellow)
 ## Description
-AS A manager
-I WANT to generate a webpage that displays my team's basic info
-SO THAT I have quick access to their emails and GitHub profiles
+```text
+AS A business owner
+I WANT to be able to view and manage the departments, roles, and employees in my company
+SO THAT I can organize and plan my business
 
 GIVEN a command-line application that accepts user input
-WHEN I am prompted for my team members and their information
-THEN an HTML file is generated that displays a nicely formatted team roster based on user input
-WHEN I click on an email address in the HTML
-THEN my default email program opens and populates the TO field of the email with the address
-WHEN I click on the GitHub username
-THEN that GitHub profile opens in a new tab
 WHEN I start the application
-THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
-WHEN I enter the team manager’s name, employee ID, email address, and office number
-THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
-WHEN I select the engineer option
-THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
-WHEN I select the intern option
-THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
-WHEN I decide to finish building my team
-THEN I exit the application, and the HTML is generated
+THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
+WHEN I choose to view all departments
+THEN I am presented with a formatted table showing department names and department ids
+WHEN I choose to view all roles
+THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
+WHEN I choose to view all employees
+THEN I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to
+WHEN I choose to add a department
+THEN I am prompted to enter the name of the department and that department is added to the database
+WHEN I choose to add a role
+THEN I am prompted to enter the name, salary, and department for the role and that role is added to the database
+WHEN I choose to add an employee
+THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
+WHEN I choose to update an employee role
+THEN I am prompted to select an employee to update and their new role and this information is updated in the database
+
 
 In this project I was able to practice my skills in MySQL. 
+```
+
 
 ## Table of Contents
  * [Installation](#installation)
@@ -39,17 +43,25 @@ In this project I was able to practice my skills in MySQL.
 ## Installation
 - node.js
 - MySQL
-- inquirer
+- inquirer package
+- console.table package
 
 ## Usage
 To use this REPO:
    1. Open the integrated terminal window
    2. Run your installations with NPM I
-   3. Fill in the prompted questions
+   3. Start MySql with Mysql -u root -p 
+   4. Source Database 
+   5. Exit MySql
+   6. Node Seeds
+   7. NPM Start
+
+Please see video for demo in assets folder - zoomed in for easy readability. 
    
 ## Features
 - Node.js
-- Jest Package 
+- MySQL
+- Console.table Package 
 - Inquirer Package
 
 ## Credits
